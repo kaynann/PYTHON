@@ -6,4 +6,4 @@ reajuste = float(input("Informe a porcentagem do reajuste: "))
 valor_aumento = salario * reajuste / 100
 novo_salario = salario + valor_aumento
 
-print(f'O seu novo salário é R$ {novo_salario}')
+print(f'O seu novo salário é R$ {novo_salario}')  

@@ -1,0 +1,1 @@
+user_word = input("Digite uma palavra: "); print(user_word[::-1])

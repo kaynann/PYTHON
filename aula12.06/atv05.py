@@ -10,11 +10,13 @@ acesso = {}
 user_name = input('Digite seu login: ')
 user_pass = int(input('Digite sua senha: '))
 
-acesso[user_name] = user_pass
+acesso = {user_name: user_pass}
 
-while True:
-    for chave in login_senha.keys():
-      if login_senha[chave] == acesso[user_name]:
-        if chave == user_name:
-          print('Acesso liberado')
-    break
+
+for chave in login_senha.keys():
+    if login_senha[chave] == acesso[user_name]:
+      if chave == user_name:
+        print('Acesso liberado')
+        break
+else:
+   print('Acesso negado!')
